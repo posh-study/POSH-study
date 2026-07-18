@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { api } from "../api/client.js";
+import { api } from "../client.js";
 
 // ログイン / 新規登録 画面。
 // 認証成功時に onAuthenticated({ user, token }) を呼んで親に通知する。

@@ -9,7 +9,7 @@
 //  ・4xx/5xx はエラーとして throw（呼び出し側で catch）
 // ============================================================================
 
-import { API_CONFIG, TOKEN_STORAGE_KEY } from "../config.js";
+import { API_CONFIG, TOKEN_STORAGE_KEY } from "./config.js";
 
 class ApiError extends Error {
   constructor(message, status) {

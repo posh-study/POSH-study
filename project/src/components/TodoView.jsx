@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { api } from "../api/client.js";
+import { api } from "../client.js";
 import TodoItem from "./TodoItem.jsx";
 
 // ログイン後のメイン画面。Todoの取得・追加・完了・削除をAPI経由で行う。
