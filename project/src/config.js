@@ -20,19 +20,19 @@ export const API_CONFIG = {
   endpoints: {
     // --- 認証 ---
     // body: { name, password }            -> { user, token }
-    register:   { method: "POST",   path: "" },   // 例: "/auth/register"
+    register:   { method: "POST",   path: "/auth/register" },   // 例: "/auth/register"
     // body: { name, password }            -> { user, token }
-    login:      { method: "POST",   path: "" },   // 例: "/auth/login"
+    login:      { method: "POST",   path: "/auth/login" },   // 例: "/auth/login"
 
     // --- Todo ---
     // GET                                 -> [{ id, text, done }, ...]
-    listTodos:  { method: "GET",    path: "" },   // 例: "/todos"
+    listTodos:  { method: "GET",    path: "/todos" },   // 例: "/todos"
     // body: { text }                      -> { id, text, done }
-    addTodo:    { method: "POST",   path: "" },   // 例: "/todos"
+    addTodo:    { method: "POST",   path: "/todos" },   // 例: "/todos"
     // body: { done }                      -> { id, text, done }
-    toggleTodo: { method: "PATCH",  path: "" },   // 例: "/todos/:id"
+    toggleTodo: { method: "PATCH",  path: "/todos/:id" },   // 例: "/todos/:id"
     // (body なし)                          -> { ok: true }
-    deleteTodo: { method: "DELETE", path: "" },   // 例: "/todos/:id"
+    deleteTodo: { method: "DELETE", path: "/todos/:id" },   // 例: "/todos/:id"
   },
 };
 
